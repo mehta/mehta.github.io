@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+    <body onload="redirect(50000)">
+      {{ content }}
+    </body>
+
+  <script type="text/javascript">
+    function redirect (milliseconds) {
+      window.setTimeout("window.location.href = 'http://in.linkedin.com/in/abhinavmehta';", milliseconds);
+    }
+  </script>
+
+</html>
