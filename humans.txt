@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Abhinav Mehta -- Software Developer -- mehta_
+
+# THANKS
+
+    - none
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Foundation, Normalizer, Jekyll
