@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-    <body onload="redirect(50000)">
+    <body onload="redirect(15000)">
       {{ content }}
     </body>
 
+  <!-- deferred js -->
   <script type="text/javascript">
     function redirect (milliseconds) {
       window.setTimeout("window.location.href = 'http://in.linkedin.com/in/abhinavmehta';", milliseconds);

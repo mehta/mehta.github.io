@@ -10,10 +10,23 @@
     <meta name="revisit-after" content="1 days" />
     <meta name="distribution" content="Bangalore,Karnataka,India" />
 
-
+    <!-- clean canonical url for search engine -->
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+    <!-- Bring Normalize CSS -->
+    <link rel="stylesheet" href="{{ site.assets }}/vendors/normalize.css">
+
+    <!-- Bring Foundation 5.2.2 CSS -->
+    <link rel="stylesheet" href="{{ site.assets }}/vendors/foundation-5.2.2/css/foundation.css">
+    <link rel="stylesheet" href="{{ site.assets }}/vendors/foundation-5.2.2/css/foundation-icons.css">
+
+    <!-- Bring jQuery 2.1.1 -->
+    <script type="text/javascript" src="{{ site.assets }}/vendors/jquery-2.1.1.js"></script>
+
+    <!-- Bring Foundation 5.2.2 JS -->
+    <script type="text/javascript" src="{{ site.assets }}/vendors/foundation-5.2.2/js/foundation/foundation.js"></script>
+
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ site.assets | prepend: site.baseurl }}/css/main.css">
+    <link rel="stylesheet" href="{{ site.assets }}/css/main.css">
 
 </head>
