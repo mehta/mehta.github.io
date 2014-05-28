@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html>
-  {% include head.html %}
-    <body onload="redirect(15000)">
+<!--[if IE 9]>
+<html class="lt-ie10" lang="en" >
+<![endif]-->
+<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
+  {% include header.html %}
+
+    <body>
       {{ content }}
     </body>
 
-  <!-- deferred js -->
-  <script type="text/javascript">
-    function redirect (milliseconds) {
-      window.setTimeout("window.location.href = 'http://in.linkedin.com/in/abhinavmehta';", milliseconds);
-    }
-  </script>
+  {% include footer.html %}
 
 </html>

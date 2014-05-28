@@ -1,7 +1,38 @@
-<header class="site-header">
+<head>
+  {% include meta.html %}
 
-  <div class="wrap">
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  <!-- clean canonical url for search engine -->
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  <!-- Bring jQuery 2.1.1 -->
+  <script type="text/javascript" src="{{ site.assets }}/vendors/jquery-2.1.1.js"></script>
+
+  <!-- Bring Foundation 5.2.2 JS -->
+  <script type="text/javascript" src="{{ site.assets }}/vendors/foundation-5.2.2/js/foundation/foundation.js"></script>
+
+  <!-- Bring Normalize CSS -->
+  <link rel="stylesheet" href="{{ site.assets }}/vendors/normalize.css">
+
+  <!-- Bring Foundation 5.2.2 CSS -->
+  <link rel="stylesheet" href="{{ site.assets }}/vendors/foundation-5.2.2/css/foundation.css">
+  <link rel="stylesheet" href="{{ site.assets }}/vendors/foundation-5.2.2/css/foundation-icons.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ site.assets }}/css/app.css">
+
+  <div class="row">
+    <div class="large-3 columns">
+      <h1><img data-cfsrc="http://placehold.it/400x100&amp;text=Logo" src="http://placehold.it/400x100&amp;text=Logo"></h1>
+    </div>
+    <div class="large-9 columns">
+      <ul class="button-group right">
+        <li><a href="#" class="button">Link 1</a></li>
+        <li><a href="#" class="button">Link 2</a></li>
+        <li><a href="#" class="button">Link 3</a></li>
+        <li><a href="#" class="button">Link 4</a></li>
+      </ul>
+    </div>
   </div>
-
-</header>
+</head>

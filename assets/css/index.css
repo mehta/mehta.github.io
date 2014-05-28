@@ -1,0 +1,58 @@
+.description {
+  font-size: 1.2857em;
+  max-width: 600px;
+  margin: 24px auto;
+  font-family: "Light","Helvetica Neue","Helvetica",Arial,sans-serif;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+#personal-info li {
+  color: #939393;
+  display: inline-block;
+  margin-bottom: 12px;
+  margin-right: 2em;
+  -webkit-font-smoothing: antialiased;
+}
+
+#user-info {
+  background: #1a1a1a;
+  color: #fff;
+  font-family: "Light","Helvetica Neue","Helvetica",Arial,sans-serif;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+#user-info h2 {
+  font-size: 3.429em;
+  font-weight: normal;
+  max-width: 60%;
+  margin: 1em auto 0px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#user-info h2 a {
+  color: #e6e6e6;
+  background: transparent;
+}
+
+.spotlight {
+  text-align: center;
+  padding: 55px;
+}
+
+.spotlight figure {
+  margin: auto;
+  display: block;
+  position: relative;
+  width: 117px;
+}
+
+.spotlight img {
+  border-radius: 50%;
+  background: #1f1f1f;
+  outline: #2f2f2f;
+  text-align: center;
+  margin-bottom: 0;
+}
