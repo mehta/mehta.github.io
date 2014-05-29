@@ -1,4 +1,4 @@
-<head>
+<header>
   {% include meta.html %}
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
@@ -22,17 +22,59 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ site.assets }}/css/app.css">
 
-  <div class="row">
-    <div class="large-3 columns">
-      <h1><img data-cfsrc="http://placehold.it/400x100&amp;text=Logo" src="http://placehold.it/400x100&amp;text=Logo"></h1>
-    </div>
-    <div class="large-9 columns">
-      <ul class="button-group right">
-        <li><a href="#" class="button">Link 1</a></li>
-        <li><a href="#" class="button">Link 2</a></li>
-        <li><a href="#" class="button">Link 3</a></li>
-        <li><a href="#" class="button">Link 4</a></li>
+  <div class="fixed">
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">HOME</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
       </ul>
-    </div>
+
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right" style="background: transparent;">
+          <li>
+            <div class="row">
+              <div>
+                <a href="#">Connect</a>
+              </div>
+            </div>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <div class="row collapse">
+              <div class="large-10 small-4 columns">
+                <a href="#">About</a>
+              </div>
+            </div>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <div class="row collapse">
+              <div class="large-10 small-4 columns">
+                <a href="#">RSS</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Left Nav Section -->
+        <ul class="left">
+          <li>
+            <div class="row collapse">
+              <div class="large-10 small-10 columns">
+                <input type="text" placeholder="Search">
+              </div>
+              <div class="large-2 small-2 columns">
+                <a href="#" class="alert button expand step fi-magnifying-glass size-60"></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </nav>
   </div>
-</head>
+
+
+</header>

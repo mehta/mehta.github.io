@@ -1,17 +1,16 @@
 .description {
   font-size: 1.2857em;
-  max-width: 600px;
+  max-width: 605px;
   margin: 24px auto;
   font-family: "Light","Helvetica Neue","Helvetica",Arial,sans-serif;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
 }
 
-#personal-info li {
+#personal-info li, li a {
   color: #939393;
   display: inline-block;
   margin-bottom: 12px;
-  margin-right: 2em;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -56,3 +55,34 @@
   text-align: center;
   margin-bottom: 0;
 }
+
+/* start: animated box */
+.spinner, #spinner {
+  width: 50px;
+  height: 50px;
+  background-color: #c76eca;
+
+  margin: 50px auto;
+  -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+  animation: rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  } 50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+  } 100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+/* end: animated box */
