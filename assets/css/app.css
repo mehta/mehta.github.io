@@ -1,5 +1,5 @@
 body {
-  background: #2c3e50;
+  background: #2CFFE6;
 }
 
 header {
@@ -8,4 +8,72 @@ header {
 
 .top-bar input, .alert {
   height: 25px;
+}
+
+footer .off-canvas-wrap {
+  background-color: #1a1a1a;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+}
+
+footer .menu {
+  background-color: #292929;
+}
+
+footer .theme-info {
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 40em) {
+  footer .theme-info, .support-links {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+footer li {
+  float: left;
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.875em;
+
+  display: block;
+}
+
+.support-links h3,
+.support-links p,
+.theme-info h3,
+.theme-info p {
+  color: #ddd;
+}
+
+.copyright {
+  color: #ddd;
+}
+
+.text-center {
+  text-align: -webkit-center;
+  text-align: center;
+}
+
+.footer ul {
+  display: inline-flex;
+  list-style-type: none;
+}
+
+.zero-margin {
+  margin: 0;
+}
+
+.cent-perecent-width {
+  width: 100%;
+  max-width: 100%;
+}
+
+.inline-flex {
+  display: inline-flex;
 }

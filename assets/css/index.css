@@ -5,6 +5,7 @@
   font-family: "Light","Helvetica Neue","Helvetica",Arial,sans-serif;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
+  color: #FFC3C3;
 }
 
 #personal-info li, li a {
@@ -13,6 +14,14 @@
   margin-bottom: 12px;
   -webkit-font-smoothing: antialiased;
 }
+
+#personal-info li {
+  margin-left: 15px;
+}
+#personal-info li a {
+  margin-right: 15px;
+}
+
 
 #user-info {
   background: #1a1a1a;
