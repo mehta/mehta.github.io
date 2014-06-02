@@ -18,10 +18,10 @@
 #personal-info li {
   margin-left: 15px;
 }
+
 #personal-info li a {
   margin-right: 15px;
 }
-
 
 #user-info {
   background: #1a1a1a;
@@ -63,6 +63,67 @@
   outline: #2f2f2f;
   text-align: center;
   margin-bottom: 0;
+}
+
+#tweet {
+  font-size: 45px;
+  font-family: cursive;
+  margin: 50px 50px 0px 50px;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+@media only screen and (max-width: 40.063em) {
+  .post-article {
+    margin: 10px;
+  }
+
+  .post-header {
+    background: #2CFFE6;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+  .post-article {
+    margin: 50px;
+  }
+
+  .post-header {
+    background: #2CFFE6;
+    margin-left: 5%;
+  }
+
+  .post-section {
+    width: 70%;
+    float: right;
+    position: relative;
+    text-align: justify;
+    margin-right: 5%;
+  }
+
+  .post-footer {
+    width: 25%;
+    float: left;
+  }
+
+  .post-footer ul {
+    float: right;
+    width: 100%;
+    position: relative;
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+
+  .post-footer ul li {
+    float: left;
+    font-weight: 600;
+    font-size: 0.875em;
+    display: block;
+    width: 100%;
+    text-align: right;
+  }
 }
 
 /* start: animated box */

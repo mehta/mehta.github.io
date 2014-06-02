@@ -34,13 +34,11 @@ footer .theme-info {
   }
 }
 
-footer li {
+footer .zero-margin li {
   float: left;
   margin-left: 20px;
-  text-transform: uppercase;
   font-weight: 600;
   font-size: 0.875em;
-
   display: block;
 }
 
