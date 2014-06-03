@@ -1,80 +1,22 @@
-<header>
-  {% include meta.html %}
+{% include meta.html %}
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} | {{ site.author }}</title>
 
-  <!-- clean canonical url for search engine -->
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<!-- clean canonical url for search engine -->
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-  <!-- Bring jQuery 2.1.1 -->
-  <script type="text/javascript" src="{{ site.assets }}/vendors/jquery-2.1.1.js"></script>
+<!-- Bring Normalize CSS -->
+<link rel="stylesheet" href="{{ site.assets }}/vendors/normalize.css">
 
-  <!-- Bring Foundation 5.2.2 JS -->
-  <script type="text/javascript" src="{{ site.assets }}/vendors/foundation-5.2.2/js/foundation/foundation.js"></script>
+<!-- Bring Foundation 5.2.2 CSS -->
+<link rel="stylesheet" href="{{ site.assets }}/vendors/foundation-5.2.2/css/foundation.css">
+<link rel="stylesheet" href="{{ site.assets }}/vendors/foundation-5.2.2/css/foundation-icons.css">
 
-  <!-- Bring Normalize CSS -->
-  <link rel="stylesheet" href="{{ site.assets }}/vendors/normalize.css">
+<!-- Custom CSS (GLOBALLY APPLICABLE) -->
+<link rel="stylesheet" href="{{ site.assets }}/css/app.css">
 
-  <!-- Bring Foundation 5.2.2 CSS -->
-  <link rel="stylesheet" href="{{ site.assets }}/vendors/foundation-5.2.2/css/foundation.css">
-  <link rel="stylesheet" href="{{ site.assets }}/vendors/foundation-5.2.2/css/foundation-icons.css">
+<!-- Bring jQuery 2.1.1 -->
+<script type="text/javascript" src="{{ site.assets }}/vendors/jquery-2.1.1.js"></script>
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="{{ site.assets }}/css/app.css">
-
-  <div class="fixed">
-    <nav class="top-bar" data-topbar>
-      <ul class="title-area">
-        <li class="name">
-          <h1><a href="#">HOME</a></h1>
-        </li>
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-      </ul>
-
-      <section class="top-bar-section">
-        <!-- Right Nav Section -->
-        <ul class="right" style="background: transparent;">
-          <li>
-            <div class="row">
-              <div>
-                <a href="#">Connect</a>
-              </div>
-            </div>
-          </li>
-          <li class="divider"></li>
-          <li>
-            <div class="row collapse">
-              <div class="large-10 small-4 columns">
-                <a href="#">About</a>
-              </div>
-            </div>
-          </li>
-          <li class="divider"></li>
-          <li>
-            <div class="row collapse">
-              <div class="large-10 small-4 columns">
-                <a href="#">RSS</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-
-        <!-- Left Nav Section -->
-        <ul class="left">
-          <li>
-            <div class="row collapse">
-              <div class="large-10 small-10 columns">
-                <input type="text" placeholder="Search">
-              </div>
-              <div class="large-2 small-2 columns">
-                <a href="#" class="alert button expand step fi-magnifying-glass size-60"></a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </section>
-    </nav>
-  </div>
-
-
-</header>
+<!-- Bring Foundation 5.2.2 JS -->
+<script type="text/javascript" src="{{ site.assets }}/vendors/foundation-5.2.2/js/foundation/foundation.js"></script>

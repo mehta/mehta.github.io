@@ -1,7 +1,11 @@
 # Site settings
 title: Abhinav Mehta Weblog
-email: developeratworks@gmail.com
+email: mail@abhinavmehta.com
 description: "my ramblings"
+author: Abhinav Mehta
+city: Bangalore
+state: Karnataka
+country: India
 
 source:      .
 destination: ./_site
@@ -53,3 +57,6 @@ kramdown:
     coderay_tab_width: 4
     coderay_bold_every: 10
     coderay_css: style
+
+# SEO/META
+copyright: © 2014 by Abhinav Mehta – web consulting

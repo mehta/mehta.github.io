@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--[if IE 9]>
+<html class="lt-ie10" lang="en" >
+<![endif]-->
+<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
+  <head>
+    {% include header.html %}
+    <script type="text/javascript">
+      // TODO: HOST SERVICE YOURSELF AND REFACTOR DAMN!
+      $.getJSON('http://whateverorigin.org/get?url=' + encodeURIComponent('https://twitter.com/mehta_') + '&callback=?', function(data) {
+          publish_latest_tweet($(data.contents).find('.ProfileTweet-text, .js-tweet-text, .ltr')[0].innerText);
+      });
+      function publish_latest_tweet(msg) {
+        $("#tweet").text(msg);
+      }
+
+      setTimeout ( "publish_latest_tweet('ohh no! Failed to fill this placeholder. Please click refresh to give one more try!')", 10000 ); // wait for 10 seconds
+    </script>
+    <link rel="stylesheet" href="{{ site.assets }}/css/index.css">
+  </head>
+  <body>
+    {% include topbar.html %}
+    {{ content }}
+    {% include bottombar.html %}
+    {% include ga.html %}
+  </body>
+</html>
