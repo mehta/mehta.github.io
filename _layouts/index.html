@@ -7,11 +7,17 @@
     {% include header.html %}
     <script type="text/javascript">
       // TODO: HOST SERVICE YOURSELF AND REFACTOR DAMN!
+      var update_twitter = true;
+
       $.getJSON('http://whateverorigin.org/get?url=' + encodeURIComponent('https://twitter.com/mehta_') + '&callback=?', function(data) {
           publish_latest_tweet($(data.contents).find('.ProfileTweet-text, .js-tweet-text, .ltr')[0].innerText);
+          update_twitter = false;
       });
+
       function publish_latest_tweet(msg) {
-        $("#tweet").text(msg);
+        if (update_twitter == true) {
+          $("#tweet").text(msg);
+        }
       }
 
       setTimeout ( "publish_latest_tweet('ohh no! Failed to fill this placeholder. Please click refresh to give one more try!')", 10000 ); // wait for 10 seconds
